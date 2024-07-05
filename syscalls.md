@@ -2,7 +2,7 @@
 
 - Bir linux kernel zamanlayıcısı kullanarak belirli aralıklarla bir callback fonksiyonu çalıştıralım. .
 
-1. Modülü başlatırken kullnaıcıdna parametre alacak şekilde yazalım.
+# Modülü başlatırken kullnaıcıdna parametre alacak şekilde yazalım.
 
 - hello.c dosyamızı güncelleyelim:
 
@@ -46,7 +46,7 @@ MODULE_AUTHOR("Sizin Adınız");
 MODULE_DESCRIPTION("Gelişmiş bir test modülü");
 ```
 
-2. Modülü derleyip test edelim:
+# Modülü derleyip test edelim:
 - Makefile ouşturup derleyelim. (makefile içeriği aynı sadece dosya ismi değişik)
 
 ```bash
@@ -59,7 +59,7 @@ sudo insmod hello.ko delay=1000
 dmesg
 ```
 
-**Modülü Kaldıralım:**
+# Modülü Kaldıralım:
 
 ```bash
 sudo rmmod sys
