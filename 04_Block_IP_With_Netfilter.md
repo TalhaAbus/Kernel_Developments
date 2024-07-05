@@ -59,7 +59,7 @@ make
 sudo insmod block_ip_with_netfilter.ko block_ip="192.168.1.100"
 ```
 
-# Test
+# Test Edelim
 - dmesg ile bloklanan paketi gözlemleyelim.
 
 ```bash
