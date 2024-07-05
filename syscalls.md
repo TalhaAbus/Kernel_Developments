@@ -1,4 +1,6 @@
-- Bir linux kernel zamanlayıcısı kullanarak belirli aralıklarla bir callback fonksiyonu çalıştıralım. "timer_setup" ve "mod_timer" fonksiyonları ile bir zamanlayıcı ayarlayalım.
+- **Bu projede "timer_setup" ve "mod_timer" fonksiyonları ile bir zamanlayıcı ayarladık. Bir linux zamanlayıcısı kullanarak belirli aralıklarla bir callback fonksiyonu çalıştırdık ve kernel'e çıktı verdik ve bu çıktıyı gözledik.**
+
+- Bir linux kernel zamanlayıcısı kullanarak belirli aralıklarla bir callback fonksiyonu çalıştıralım. .
 
 1. Modülü başlatırken kullnaıcıdna parametre alacak şekilde yazalım.
 
