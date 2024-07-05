@@ -4,3 +4,8 @@ Gerekli paketleri kuralım:
 sudo apt update
 sudo apt install build-essential linux-headers-$(uname -r)
 ```
+
+
+
+
+
