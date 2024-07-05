@@ -2,7 +2,7 @@
 
 - Bir linux kernel zamanlayıcısı kullanarak belirli aralıklarla bir callback fonksiyonu çalıştıralım. .
 
-# Modülü başlatırken kullnaıcıdna parametre alacak şekilde yazalım.
+# Modülü başlatırken kullanıcıdan parametre alacak şekilde yazalım.
 
 - hello.c dosyamızı güncelleyelim:
 
