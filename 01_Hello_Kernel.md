@@ -1,13 +1,13 @@
 **Bu projede basit bir kernel modülü yazacağız ve çıktısını gözlemleyeceğiz.**
 
-1. Gerekli paketleri kuralım:
+# Gerekli paketleri kuralım:
 
 ```bash
 sudo apt update
 sudo apt install build-essential linux-headers-$(uname -r)
 ```
 
-2. hello.c adında bir dosya oluşturalım:
+#  hello.c adında bir dosya oluşturalım:
 
 ```C
 #include <linux/module.h>
@@ -29,7 +29,7 @@ MODULE_DESCRIPTION("Basit bir test modülü");
 ```
 > Bu modül, yüklendiğinde "Merhaba dünya 1." ve kaldırıldığında "Güle güle dünya 1." mesajını yazdıracaktır.
 
-3. Makefile oluşturalım:
+#  Makefile oluşturalım:
 - Derlemek için bir makefile gerekir.
 
 ```makefile
@@ -41,20 +41,20 @@ all:
 clean:
 	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) clean
 ```
-4. Modülü derleyip test edelim:
+#  Modülü derleyip test edelim:
 ```bash
 make
 sudo insmod hello.ko
 ```
 > insmod ile linux çekirdeğine modül ekledik. ko uzantılı dosya kernel object'tir.
 
-5. Mesajları kontrol edelim.
+#  Mesajları kontrol edelim.
 ```bash
 dmesg | tail
 ```
 > dmesg ile kerneldeki mesajı gördük. "merhaba dünya 1."
 
-6. Modülü silelim:
+#  Modülü silelim:
 ```bash
 sudo rmmod hello
 ```
