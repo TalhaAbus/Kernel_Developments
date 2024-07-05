@@ -123,6 +123,8 @@ MODULE_DESCRIPTION("A network packet filter module that blocks multiple IPs");
 ```
 > Bloklanacak ip adreslerini bir dizi olarak kabul edip gelen paketleri bu adresler ile karşılaştıracak bir kod.
 
+# Derleyip Modülü Yükleyelim
+
 ```bash
 make
 sudo insmod blockk.ko block_ips="192.168.1.100,192.168.1.101,104.18.32.115,172.64.155.141"
