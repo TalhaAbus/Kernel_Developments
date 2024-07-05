@@ -1,3 +1,5 @@
+**Bu projede basit bir kernel modülü yazacağız ve çıktısını gözlemleyeceğiz.**
+
 1. Gerekli paketleri kuralım:
 
 ```bash
