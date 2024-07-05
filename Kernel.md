@@ -1,11 +1,11 @@
-Gerekli paketleri kuralım:
+1. Gerekli paketleri kuralım:
 
 ```bash
 sudo apt update
 sudo apt install build-essential linux-headers-$(uname -r)
 ```
 
-- hello.c adında bir dosya oluşturalım:
+2. hello.c adında bir dosya oluşturalım:
 
 ```C
 #include <linux/module.h>
@@ -39,10 +39,24 @@ all:
 clean:
 	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) clean
 ```
+4. Modülü derleyip test edelim:
+```bash
+make
+sudo insmod hello.ko
+```
+> insmod ile linux çekirdeğine modül ekledik. ko uzantılı dosya kernel object'tir.
 
+5. Mesajları kontrol edelim.
+```bash
+dmesg | tail
+```
+> dmesg ile kerneldeki mesajı gördük. "merhaba dünya 1."
 
-
-
+6. Modülü silelim:
+```bash
+sudo rmmod hello
+```
+> Yüklediğimiz modülü kerneldan sildik. "güle güle dünya" çıktısı aldık
 
 
 
